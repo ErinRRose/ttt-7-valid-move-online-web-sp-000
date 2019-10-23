@@ -1,6 +1,6 @@
 def valid_move?
     if position_taken?
-      taken
+      false
     else
         execute something else
     end
