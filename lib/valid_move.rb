@@ -1,8 +1,8 @@
-def valid_move?
-    if position_taken?
-      false
+def valid_move?(board, index)
+    if index.between?(0, 8) && !position_taken?(board, index)
+      true
     else
-        execute something else
+    false
     end
 end
 
